@@ -1,8 +1,7 @@
-<<<<<<< HEAD
 
 def exchange_first_last(seq):
 
-=======
+
 #  Author      - Chieu Quach
 #  Assignment  - Lesson 3
 #  Exercise    - Slicing Lab
@@ -13,7 +12,7 @@ def exchange_first_last(seq):
     
     # With the first and last items exchanged
     
->>>>>>> master
+
     # slice string
     # seq[-1:]  = take very last character
     # seq[:1]   = take very first character
@@ -24,7 +23,7 @@ def exchange_first_last(seq):
     return a_new_sequence
 
 
-<<<<<<< HEAD
+
 def even_string(seq):
 
      # With every other item removed
@@ -36,8 +35,8 @@ def even_string(seq):
          if v == 1:
             print(seq[n], end = " ")
             return seq(n)
-=======
->>>>>>> master
+
+
 def swap_element(seq):
 
     # Elements Reversed
@@ -45,7 +44,7 @@ def swap_element(seq):
 
     print ("str ", a_new_sequence)
     return a_new_sequence
-<<<<<<< HEAD
+
     
 a_string = "this is a string"
 a_tuple = (2, 54, 13, 12, 5, 32)
@@ -58,7 +57,6 @@ assert swap_element(a_tuple) == (32, 5, 12, 13, 54, 2)
 assert exchange_first_last(a_string) == "ghis is a strint"
 assert exchange_first_last(a_tuple) == (32, 54, 13, 12, 5, 2)
 
-=======
 
 def other_item_removed(seq):
 
@@ -123,4 +121,4 @@ assert first_n_last_4items(a_string) == " sas"
 assert first_n_last_4items(a_tuple) == ()
 assert first_mid_last_3items(a_string) == "s s a str"
 assert first_mid_last_3items (a_tuple) == ()
->>>>>>> master
+
