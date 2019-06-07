@@ -249,12 +249,7 @@ def test_hr():
     assert '<hr />\n' in file_contents
 
 
-def test_hr_attr():
-    """a horizontal rule with an attribute"""
-    hr = Hr(width=400)
-    file_contents = render_result(hr)
-    print(file_contents)
-    assert file_contents == '<hr width="400" />\n'
+
     
 ########
 # Step 3
