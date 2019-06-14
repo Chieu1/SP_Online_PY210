@@ -187,7 +187,7 @@ def send_letters():
 
     for line in chk_inputz:
         with open(line['full name'] + ".txt", "w") as outfile:
-                outfile.writelines(msg.format(line['full name'], line['Amount']))
+            outfile.writelines(msg.format(line['full name'], line['Amount']))
    
     outfile.close()
    
@@ -200,42 +200,42 @@ def main():
 
     while True:
           # Use switch case to call functions from user input
-         switch = {1: send_thankyou,
-             2: create_report,
-             3: send_letters,               
-             4: exit_program,
+        switch = {1: send_thankyou,
+            2: create_report,
+            3: send_letters,               
+            4: exit_program,
                           
-         }
+        }
                       
-         response = input(prompt)
-         try:
-             response = int(response)
+        response = input(prompt)
+        try:
+            response = int(response)
               
-         except ValueError:
-             print ("Invalid input ", response )
-         except KeyError as i: 
-             print ("Keyerror ")
-             print (i)
-         else:    
+        except ValueError:
+            print ("Invalid input ", response )
+        except KeyError as i: 
+            print ("Keyerror ")
+            print (i)
+        else:    
                
-             try:
-                 switch[response]()          
+            try:
+                switch[response]()          
             
-             except IndexError:
-                 print ("Index Error ", response)
-             except ValueError as e:
-                 print ("ValueError ")
-                 print (e)
-             except KeyError as o:  
-                 print ("Invalid selection ")
-                 print (o)
-             except KeyboardInterrupt:
-                 print ("Wrong key enter ")
+            except IndexError:
+                print ("Index Error ", response)
+            except ValueError as e:
+                print ("ValueError ")
+                print (e)
+            except KeyError as o:  
+                print ("Invalid selection ")
+                print (o)
+            except KeyboardInterrupt:
+                print ("Wrong key enter ")
 
              
 
 # Main function
 if __name__ == "__main__": 
    
-   main() 
+    main() 
 
