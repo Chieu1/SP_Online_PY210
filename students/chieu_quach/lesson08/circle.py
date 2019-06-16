@@ -17,6 +17,11 @@ class Circle(object):
     def get_diameter(self, value):
         self.radius = value
 
+    @classmethod
+    def from_diameter(cls, radius):
+        cls.radius = radius / 2
+        
+        return cls(cls.radius)
    
     def area(self):
         
@@ -129,6 +134,10 @@ print ("total circle ", c_total)
 
 multi_circles = c2 * 3
 print ("Multi. circle ", multi_circles)
+
+c = Circle.from_diameter(8)
+print ("Set Diameter ", int(c.get_diameter))
+print ("Set Radius ", int(c.radius))
  
 print("Perimeter of circle:",round(c1.perimeter(),2))
 
